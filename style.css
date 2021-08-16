@@ -52,6 +52,7 @@ input {
   height: 40px;
   border: none;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 input::-webkit-color-swatch-wrapper {
