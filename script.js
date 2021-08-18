@@ -1,16 +1,14 @@
 const teksGradient = document.querySelector("h4");
-var color1 = document.querySelector(".color-1");
-var color2 = document.querySelector(".color-2");
-var warnaGradient = document.querySelector(".gradient");
-var p1 = document.querySelector("#hex1");
-var p2 = document.querySelector("#hex2");
+const color1 = document.querySelector(".color-1");
+const color2 = document.querySelector(".color-2");
+const warnaGradient = document.querySelector(".gradient");
 
 function buatGradient() {
-  let warna1 = color1.value;
-  let warna2 = color2.value;
+  let p1 = document.querySelector("#hex1");
+  let p2 = document.querySelector("#hex2");
 
-  p1.innerHTML = warna1;
-  p2.innerHTML = warna2;
+  p1.innerHTML = color1.value;
+  p2.innerHTML = color2.value;
 
   warnaGradient.style.background =
     "linear-gradient(45deg, " + color1.value + "," + color2.value + ")";
